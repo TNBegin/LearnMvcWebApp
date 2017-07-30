@@ -236,8 +236,9 @@
     <Content Include="Views\Orders\Details.cshtml" />
     <Content Include="Views\Orders\Edit.cshtml" />
     <Content Include="Views\Orders\Index.cshtml" />
-    <Content Include="Documents\EF Codefirs详情t.docx" />
+    <Content Include="Documents\EF Codefirs%28数据注解-并发-关系%29t.docx" />
     <Content Include="Documents\3种数据库初始化方式.docx" />
+    <Content Include="Documents\Configure Domain Classes（配置领域类）.docx" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />

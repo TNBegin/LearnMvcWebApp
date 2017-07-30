@@ -26,7 +26,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;//System.ComponentModel.DataAnnotations数据注解提供的特性仅仅是Fluent API配置的一部分子集而已，所以，如果你，在数据注解中，没有找到的属性，可以使用Fluent API来配置。
 using System.Linq;
 using System.Web;
 
