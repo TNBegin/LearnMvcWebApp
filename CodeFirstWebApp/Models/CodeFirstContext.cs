@@ -23,7 +23,7 @@
  * 
  * 
  * ************************************************************************************/
-
+ 
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -35,10 +35,20 @@ namespace CodeFirstWebApp.Models
     public class CodeFirstContext : DbContext
     {
         public CodeFirstContext() : base("name=CodeFirstContext"){ }
-
+        
         public DbSet<Order> Order { get; set; }
 
         public DbSet<OrderDetail> OrderDetail { get; set; }
 
+        ///// <summary>
+        ///// 当模型发生改变的时候，就删掉重新创建数据库。
+        ///// </summary>
+        ///// <param name="modelBuilder"></param>
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CodeFirstContext>());
+
+        //    base.OnModelCreating(modelBuilder);
+        //}
     }
 }

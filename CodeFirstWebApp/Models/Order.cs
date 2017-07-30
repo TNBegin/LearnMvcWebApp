@@ -35,7 +35,7 @@ namespace CodeFirstWebApp.Models
     public class Order
     {
         /// <summary>
-        /// 如果属性名后包含id,则默认会当成主键，可以不用添加[Key]属性
+        /// 如果属性名字是Id或者是类名+ID就会被自动设置成主键，可以不用添加[Key]属性
         /// </summary>
         [Key]
         public int OrderId { get; set; }
@@ -51,6 +51,7 @@ namespace CodeFirstWebApp.Models
         /// </summary>
         public decimal OrderAmount { set; get; }
 
+        /*通过导航属性，Code-First能够推断出，两个实体之间的关系，这个导航属性可以是简单的引用类型或者是集合类型.*/
         /// <summary>
         /// 导航属性设置成virtual，可以实现延迟加载（惰性加载指的是当第一访问导航属性的时候自动
         /// 从数据库加载相关实体。这种特性是由代理类实现的，代理类派生自实体类，并重写了导航属性。
