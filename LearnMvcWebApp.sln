@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelFirstConsoleApp", "Mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstWebApp", "CodeFirstWebApp\CodeFirstWebApp.csproj", "{F2C4B040-34B6-402E-AE4C-B96A59B7E590}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{26EDBAC7-F728-45BB-8E87-AA4C37D730CE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiOption", "..\WebApiOption\WebApiOption\WebApiOption.csproj", "{3865A721-8993-4B60-873C-AD72701041DC}"
 EndProject
 Global
@@ -38,8 +36,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{3865A721-8993-4B60-873C-AD72701041DC} = {26EDBAC7-F728-45BB-8E87-AA4C37D730CE}
 	EndGlobalSection
 EndGlobal
