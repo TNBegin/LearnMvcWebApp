@@ -35,10 +35,10 @@ namespace CodeFirstWebApp.Models
     public class Order
     {
         /// <summary>
-        /// 如果属性名字是Id或者是类名+ID就会被自动设置成主键，可以不用添加[Key]属性
+        /// 如果属性名字是 Id 或者是 类名+Id 就会被自动设置成主键，可以不用添加[Key]属性
         /// </summary>
-        [Key]
-        public int OrderId { get; set; }
+        //[Key]
+        public int OrderID { get; set; }
 
         /// <summary>
         /// 订单号

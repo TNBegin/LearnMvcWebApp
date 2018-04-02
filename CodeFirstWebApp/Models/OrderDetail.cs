@@ -53,7 +53,7 @@ namespace CodeFirstWebApp.Models
         /// 注：ForeignKey里面的值要和导航属性的名称一致
         /// </summary>
         [ForeignKey("Order")]
-        public int OrderId { get; set; }
+        public int OrderID { get; set; }
 
 
         public virtual Order Order { get; set; }

@@ -34,8 +34,27 @@ namespace CodeFirstWebApp.Models
 {
     public class CodeFirstContext : DbContext
     {
-        public CodeFirstContext() : base("name=CodeFirstContext"){ }
-        
+        //3种数据库初始化方式
+        ///// <summary>
+        ///// 1.创建数据库命名方式：{Namespace}.{Context class name}
+        ///// </summary>
+        //public CodeFirstContext() : base() { }
+
+        ///// <summary>
+        ///// 2.指定数据库的名字在base构造器中；自定义数据库名：ModelFistDB
+        ///// </summary>
+        //public CodeFirstContext() : base("ModelFistDB") { }
+
+        ///// <summary>
+        ///// 3.1连接字符串
+        ///// </summary>
+        //public CodeFirstContext() : base("CodeFirstContext"){ }
+
+        /// <summary>
+        /// 3.2连接字符串
+        /// </summary>
+        public CodeFirstContext() : base("name=CodeFirstContext") { }
+
         public DbSet<Order> Order { get; set; }
 
         public DbSet<OrderDetail> OrderDetail { get; set; }
@@ -46,6 +65,7 @@ namespace CodeFirstWebApp.Models
         ///// <param name="modelBuilder"></param>
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{
+        //    这里面配置领域类实体，通过使用Fluent API
         //    Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CodeFirstContext>());
 
         //    base.OnModelCreating(modelBuilder);
